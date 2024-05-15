@@ -35,3 +35,29 @@ console.log(typeof email);
 // if we see type of any null value it give us object
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack(Primitive), Heap(Non-primintive)
+
+let name = "Devesh"
+
+let friendName = name
+
+friendName = "Rohit"
+
+console.log(name);
+console.log(friendName);
+
+let userOne = {
+    email:"Devesh@email.com",
+    upi:"ehifh@jiekhjf"
+}
+
+let userTwo = userOne
+
+userTwo.email = "Devesh@credex.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
